@@ -1,0 +1,40 @@
+PODS:
+  - FCFileManager (1.0.20)
+  - Masonry (1.1.0)
+  - RCChatroomSceneKit (0.0.2):
+    - Masonry
+    - RCCoreKit
+    - YYModel
+  - RCCoreKit (0.0.1):
+    - FCFileManager
+    - SSZipArchive
+    - YYModel
+  - SSZipArchive (2.4.2)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - RCChatroomSceneKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - FCFileManager
+    - Masonry
+    - RCCoreKit
+    - SSZipArchive
+    - YYModel
+
+EXTERNAL SOURCES:
+  RCChatroomSceneKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FCFileManager: e0f73316e6aa2eb04d2ff4caa75fe7df1ae44270
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  RCChatroomSceneKit: 24abaee741fc97b3c8dea18a85dd0bdb7a5d51ae
+  RCCoreKit: 3f143441ac62880b454cca9066f526a27c45d4ce
+  SSZipArchive: e7b4f3d9e780c2acc1764cd88fbf2de28f26e5b2
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 78cb8838f7a811fcdd6c080ebc8981be6074a00b
+
+COCOAPODS: 1.11.2
