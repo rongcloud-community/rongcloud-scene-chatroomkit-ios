@@ -35,14 +35,14 @@
 ## 功能
 场景化聊天室内部按功能分为三个部分：
 - 消息列表
-<img src= "./imgs/chatroom_sceneview_0.PNG"  width="375" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e70qlxujj20ku112427.jpg"  width="375" alt="RCChatRoomSceneKit">
 
 - 功能栏
-<img src= "./imgs/chatroom_sceneview_1.PNG"  width="375" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e71gh5cwj20ku112422.jpg"  width="375" alt="RCChatRoomSceneKit">
 
 - 输入框：
 
-<img src= "./imgs/chatroom_sceneview_2.PNG"  width="375" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e71zhmqxj20ku112n03.jpg"  width="375" alt="RCChatRoomSceneKit">
 
 ## 配置项
 
@@ -161,7 +161,7 @@ toolBar.snp.makeConstraints { make in
 - 左边唤起输入按钮
 - 中间的按钮排列组(属性命名为 commonActions )
 - 右边的按钮排列组(属性命名为 actions )
-![alt(height=300)](./imgs/chatroom_sceneview_3.PNG)
+![alt(height=300)](https://tva1.sinaimg.cn/large/e6c9d24ely1h0e73k11stj20kq02ydga.jpg)
 ```
 let button1 = YourDefinedUIButon（）
 let button2 = YourDefinedUIButon（）
