@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://github.com/rongcloud/rongcloud-scene-chatroomkit">
-<img src="https://img.shields.io/cocoapods/v/RCChatroomSceneKit.svg?style=flat">
+<img src="https://img.shields.io/cocoapods/v/RCSceneChatroomKit.svg?style=flat">
 </a>
 
 <a href="https://github.com/rongcloud/rongcloud-scene-chatroomkit">
-<img src="https://img.shields.io/cocoapods/l/RCChatroomSceneKit.svg?style=flat">
+<img src="https://img.shields.io/cocoapods/l/RCSceneChatroomKit.svg?style=flat">
 </a>
 
 <a href="https://github.com/rongcloud/rongcloud-scene-chatroomkit">
-<img src="https://img.shields.io/cocoapods/p/RCChatroomSceneKit.svg?style=flat">
+<img src="https://img.shields.io/cocoapods/p/RCSceneChatroomKit.svg?style=flat">
 </a>
 
 <a href="https://github.com/rongcloud/rongcloud-scene-chatroomkit">
@@ -28,21 +28,21 @@
 1. 终端 cd 至项目根目录
 2. 执行 pod init
 3. 执行 open -e Podfile
-4. 添加导入配置 pod 'RCChatroomSceneKit'
+4. 添加导入配置 pod 'RCSceneChatroomKit'
 5. 执行 pod install
 6. 双击打开 .xcworkspace
 
 ## 功能
 场景化聊天室内部按功能分为三个部分：
 - 消息列表
-<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e70qlxujj20ku112427.jpg"  height="375" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e70qlxujj20ku112427.jpg"  height="375" alt="RCSceneChatroomKit">
 
 - 功能栏
-<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e71gh5cwj20ku112422.jpg"  height="375" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e71gh5cwj20ku112422.jpg"  height="375" alt="RCSceneChatroomKit">
 
 - 输入框：
 
-<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e71zhmqxj20ku112n03.jpg"  height="375" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e71zhmqxj20ku112n03.jpg"  height="375" alt="RCSceneChatroomKit">
 
 ## 配置项
 
@@ -162,7 +162,7 @@ toolBar.snp.makeConstraints { make in
 - 中间的按钮排列组(属性命名为 commonActions )
 - 右边的按钮排列组(属性命名为 actions )
 
-<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e73k11stj20kq02ydga.jpg"  height="50" alt="RCChatRoomSceneKit">
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e73k11stj20kq02ydga.jpg"  height="50" alt="RCSceneChatroomKit">
 
 ```
 let button1 = YourDefinedUIButon（）

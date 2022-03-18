@@ -3,7 +3,7 @@ use_frameworks!
 platform :ios, '11.0'
 
 target 'ChatRoomScene_Example' do
-  pod 'RCChatroomSceneKit', :path => '../'
+  pod 'RCSceneChatroomKit', :path => '../'
 
   target 'ChatRoomScene_Tests' do
     inherit! :search_paths
