@@ -161,7 +161,7 @@ toolBar.snp.makeConstraints { make in
 - 左边唤起输入按钮
 - 中间的按钮排列组(属性命名为 commonActions )
 - 右边的按钮排列组(属性命名为 actions )
-![alt(height=300)](https://tva1.sinaimg.cn/large/e6c9d24ely1h0e73k11stj20kq02ydga.jpg)
+<img src= "https://tva1.sinaimg.cn/large/e6c9d24ely1h0e73k11stj20kq02ydga.jpg"  height="50" alt="RCChatRoomSceneKit">
 ```
 let button1 = YourDefinedUIButon（）
 let button2 = YourDefinedUIButon（）
