@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RCSceneChatroomKit'
-  s.version          = '0.0.3'
+  s.version          = '0.0.3.1'
   s.summary          = 'Scene ChatRoom for messages.'
 
   s.description      = <<-DESC
@@ -17,7 +17,7 @@ Chatroom Scene Message Kit.
 
   s.homepage         = 'https://github.com/rongcloud'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'zangqilong' => 'zangqilong1@rongcloud.cn' }
+  s.author           = { 'shaoshuai' => 'shaoshuai@rongcloud.cn' }
   s.source           = { :git => 'https://github.com/rongcloud-community/rongcloud-scene-chatroomkit-ios', :tag => s.version.to_s }
 
   s.ios.deployment_target = '11.0'
