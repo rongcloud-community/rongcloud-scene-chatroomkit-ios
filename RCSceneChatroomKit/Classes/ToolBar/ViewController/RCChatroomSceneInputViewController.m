@@ -147,8 +147,9 @@
     [self.containerView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.view);
         make.right.equalTo(self.view);
-        make.bottom.equalTo(self.view);
         make.height.mas_greaterThanOrEqualTo(50);
+        make.bottom.equalTo(self.view.mas_safeAreaLayoutGuideBottom).priorityMedium();
+        make.bottom.lessThanOrEqualTo(self.view).offset(0).priorityHigh();
     }];
     
     [self.backgroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -287,11 +288,8 @@
     CGRect endFrame = value.CGRectValue;
 
     CGFloat keyboardHeight = UIScreen.mainScreen.bounds.size.height - endFrame.origin.y;
-    if (keyboardHeight > 0) {
-        keyboardHeight = keyboardHeight - self.view.safeAreaInsets.bottom;
-    }
     [self.containerView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.bottom.equalTo(self.view).offset(-keyboardHeight);
+        make.bottom.lessThanOrEqualTo(self.view).offset(-keyboardHeight).priorityHigh();
     }];
     [self.view layoutIfNeeded];
 }
