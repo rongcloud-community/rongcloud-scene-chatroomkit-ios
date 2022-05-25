@@ -7,6 +7,7 @@
 
 #import <AVFoundation/AVFoundation.h>
 
+#import "UIViewController+Extension.h"
 #import "RCChatroomSceneAudioRecorder.h"
 
 static NSString *kRCCSAudioFileNamePre = @"RCChatroomRecord_";
@@ -134,7 +135,7 @@ static NSString *kRCCSAudioFileNamePre = @"RCChatroomRecord_";
     UIAlertController *controller = [UIAlertController alertControllerWithTitle:@"提示" message:@"请到设置 -> 隐私 -> 麦克风 ，打开访问权限" preferredStyle:UIAlertControllerStyleAlert];
     UIAlertAction *sureAction = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
     [controller addAction:sureAction];
-    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:controller animated:YES completion:nil];
+    [[UIViewController topmost] presentViewController:controller animated:YES completion:nil];
 }
 
 #pragma mark - Clear -

@@ -9,6 +9,7 @@
 
 #import "UIImage+Bundle.h"
 #import "RCChatroomAudioRecordView.h"
+#import "UIViewController+Extension.h"
 #import "RCChatroomSceneAudioRecorder.h"
 #import "RCChatroomSceneToolBarConfig.h"
 #import "RCChatroomSceneRecorderViewController.h"
@@ -222,8 +223,7 @@
 
 - (void)recordStateChanged:(RCChatroomAudioRecordState)state {
     [self.recorderController setState:state];
-    UIViewController *controller = UIApplication.sharedApplication.keyWindow.rootViewController;
-    switch (state) {
+    UIViewController *controller = [UIViewController topmost];     switch (state) {
         case RCChatroomAudioRecordStateBegin:
         case RCChatroomAudioRecordStateLack:
             if (self.recorderController.presentingViewController == nil && self.recorderController.beingPresented == NO) {

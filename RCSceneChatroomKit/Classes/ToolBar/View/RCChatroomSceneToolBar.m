@@ -13,6 +13,7 @@
 #import "RCChatroomSceneInputViewController.h"
 #import "RCChatroomSceneToolBarConfig.h"
 #import "RCChatroomSceneInputBarConfig.h"
+#import "UIViewController+Extension.h"
  
 @interface RCChatroomSceneToolBar () <RCChatroomSceneInputViewControllerDelegate, RCChatroomAudioRecordViewDelegate>
 
@@ -93,7 +94,7 @@
 
 - (void)buttonDidClick:(UIButton *)button {
     RCChatroomSceneInputViewController *controller = [[RCChatroomSceneInputViewController alloc] initWithConfig:[RCChatroomSceneInputBarConfig default] inputDelegate:self];
-    [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:controller animated:YES completion:nil];
+    [[UIViewController topmost] presentViewController:controller animated:YES completion:nil];
 }
 
 - (RCChatroomAudioRecordView *)recordView {
