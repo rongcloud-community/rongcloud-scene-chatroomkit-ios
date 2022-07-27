@@ -60,13 +60,16 @@
     [self.messages addObject:message];
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:self.messages.count - 1 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationNone];
-    
-    for (NSIndexPath *tmp in self.tableView.indexPathsForVisibleRows) {
-        if (tmp.row < self.messages.count - 2) continue;
-        [self.tableView scrollToRowAtIndexPath:indexPath
-                              atScrollPosition:UITableViewScrollPositionBottom
-                                      animated:YES];
-        break;
+    if ([message respondsToSelector:@selector(isOwner)] && [message isOwner]) {
+        [self.tableView scrollToRowAtIndexPath:indexPath atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    } else {
+        for (NSIndexPath *tmp in self.tableView.indexPathsForVisibleRows) {
+            if (tmp.row < self.messages.count - 2) continue;
+            [self.tableView scrollToRowAtIndexPath:indexPath
+                                  atScrollPosition:UITableViewScrollPositionBottom
+                                          animated:YES];
+            break;
+        }
     }
 }
 

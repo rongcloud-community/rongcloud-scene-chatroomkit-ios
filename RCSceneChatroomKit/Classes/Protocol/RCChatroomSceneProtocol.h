@@ -30,6 +30,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 富文本消息体
 - (NSAttributedString *)attributeString;
 
+/// 消息是不是自己发的
+- (BOOL)isOwner;
+
 @end
 
 /// 消息事件标记被点击
